@@ -1,18 +1,19 @@
 import sys
 import os
 from github import Github
+from dotenv import load_dotenv
 
-path = "/Users/kalle/Documents/Projects/MyProjects/"
+load_dotenv()
 
-username = "" #Insert your github username here
-password = "" #Insert your github password here
+accessToken = os.getenv("ACCESSTOKEN")
+
+projectDescription = "New Flutter Project"
 
 def create():
-    folderName = str(sys.argv[1])
-    os.makedirs(path + str(folderName)
-    user = Github(username, password).get_user()
-    repo = user.create_repo(folderName)
-    print("Succesfully created repository {}".format(folderName))
+    user = Github(accessToken).get_user()
+    repo = user.create_repo(sys.argv[1], description = projectDescription)
+    print(repo.git_url.replace("git://github.com/", "git@github.com:"))
 
+    
 if __name__ == "__main__":
     create()
