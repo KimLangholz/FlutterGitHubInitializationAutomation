@@ -20,7 +20,7 @@ git push -u origin master
 ## Initial Setup
 
 * Clone project to your computer.
-* Create a .env file and copy .env.example into it.
+* Create a .env file and copy the content of .env.example into it.
 * Add your own [GitHub accesstoken] (https://github.com/settings/tokens) to the .env file
 * Replace line 5 and 7 in create_repo.sh with your desired project path location. *The path on line 7 needs to end with $1*
 * Replace the GitHub accountname in the GitHub URL with your own GitHub account name. 
@@ -36,7 +36,8 @@ Add: alias create="/Users/kimlangholz/Projects/Python/ProjectInitializationAutom
 
 ### Roadmap
 
- [ ] Write a guide for using this on Windows and Linux
+ [ ] Write a guide for using this on Windows and Linux.
+ 
  [ ] Add options when creating a Flutter project based on several pre-defined templates.
 
 ###### Credits
