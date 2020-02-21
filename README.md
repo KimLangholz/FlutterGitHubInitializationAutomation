@@ -1,4 +1,4 @@
-# Flutter Github Initialization Automation
+# Flutter New Project Automation
 
 This is a automation script that in its current form creates a new GitHub repo, a new Flutter Project and initializes, commits and pushes it to GitHub for you, when called by a simple command. 
 
@@ -23,13 +23,13 @@ create project_name
 **Step 1**
 Start by cloning this project into your desired location:
 ```
-git clone https://github.com/KimLangholz/FlutterGitHubInitializationAutomation.git
+git clone https://github.com/KimLangholz/FlutterNewProjectAutomation.git
 ```
 
 **Step 2**
 Navigate into that folder:
 ```
-cd FlutterGitHubInitializationAutomation
+cd FlutterNewProjectAutomation
 ```
 
 **Step 3**
@@ -57,14 +57,14 @@ Save and close create_repo.sh
 **For zsh users** 
 Add: 
 ```
-alias create="/Users/kimlangholz/Projects/Python/ProjectInitializationAutomation/create_repo.sh"
+alias create="/Users/kimlangholz/Projects/Python/FlutterNewProjectAutomation/create_repo.sh"
 ```
 to your .zshrc file in your HOME folder. Obviously changing the path to reference your local create_repo.sh file.
 
 **For bash users**
 Add: 
 ```
-alias create="/Users/kimlangholz/Projects/Python/ProjectInitializationAutomation/create_repo.sh"
+alias create="/Users/kimlangholz/Projects/Python/FlutterNewProjectAutomation/create_repo.sh"
 ``` 
 to your .bash_profile file in your HOME folder. Obviously changing the path to reference your local create_repo.sh file.
 
@@ -85,6 +85,7 @@ to your .bash_profile file in your HOME folder. Obviously changing the path to r
 ### Roadmap
 
  [ ] Write a guide for using this on Windows and Linux.
+ 
  [ ] Add options when creating a Flutter project based on several pre-defined templates so that we in the future can create a project with e.g. a log_in sequence
 
 ###### Credits
